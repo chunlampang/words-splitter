@@ -36,15 +36,17 @@ function splitWords(text) {
 
         var pos = i === 0 ? 0 : lastPos + words[i - 1].length + 1;
 
-        var carry = 0, m;
+        if (word) {
+            var carry = 0, m;
 
-        while (m = reg.exec(removeSymbols(word))) {
-            indexs.push(carry === 0 ? pos : pos + m.index);
-            carry++;
-        }
+            while (m = reg.exec(removeSymbols(word))) {
+                indexs.push(carry === 0 ? pos : pos + m.index);
+                carry++;
+            }
 
-        if (carry === 0) {//not supported language
-            indexs.push(pos);
+            if (carry === 0) {//not supported language
+                indexs.push(pos);
+            }
         }
 
         lastPos = pos;
