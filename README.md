@@ -1,5 +1,10 @@
 # Words Splitter
 
+## Install
+```
+npm i words-splitter-multi-lang
+```
+
 ## Usage
 ```js
 let result = splitWords('Hello World. XD');

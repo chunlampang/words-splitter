@@ -1,0 +1,21 @@
+{
+  "name": "words-splitter-multi-lang",
+  "version": "1.0.0",
+  "description": "Split, count and crop multi-language words",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chunlampang/words-splitter.git"
+  },
+  "keywords": [
+    "words-splitter",
+    "multi-language",
+    "word-count"
+  ],
+  "author": "chunlampang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chunlampang/words-splitter/issues"
+  },
+  "homepage": "https://github.com/chunlampang/words-splitter#readme"
+}
