@@ -32,14 +32,14 @@ function splitWords(text) {
     var lastPos = 0;
 
     for (var i = 0; i < words.length; i++) {
-        var word = words[i];
+        var word = removeSymbols(words[i]);
 
         var pos = i === 0 ? 0 : lastPos + words[i - 1].length + 1;
 
-        if (word) {
+        if (word.trim()) {
             var carry = 0, m;
 
-            while (m = reg.exec(removeSymbols(word))) {
+            while (m = reg.exec(word)) {
                 indexs.push(carry === 0 ? pos : pos + m.index);
                 carry++;
             }
