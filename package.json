@@ -1,6 +1,6 @@
 {
   "name": "words-splitter-multi-lang",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Split, count and crop multi-language words",
   "main": "index.js",
   "repository": {
